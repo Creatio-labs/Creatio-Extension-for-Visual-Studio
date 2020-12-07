@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Configuration service</Name>
+    <Description>Template for Creatio configuration service</Description>
+    <Icon>ConfigurationServiceTemplate.ico</Icon>
+    <TemplateID>be0b31a0-9653-41a5-bd66-3a0ab8aa3105</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>ConfigurationService.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true">ConfigurationServiceTemplate.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

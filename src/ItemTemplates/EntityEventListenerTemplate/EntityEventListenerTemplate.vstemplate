@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Entity event listener</Name>
+    <Description>Template for Creatio entity event listener</Description>
+    <Icon>EntityEventListenerTemplate.ico</Icon>
+    <TemplateID>b0f2d205-df8e-4316-9f42-57baf9eed004</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>EntityEventListener.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true">EntityEventListenerTemplate.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
