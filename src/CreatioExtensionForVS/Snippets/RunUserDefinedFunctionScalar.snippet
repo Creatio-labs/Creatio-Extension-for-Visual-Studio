@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Run user defined function (scalar)</Title>
+      <Author>Mykyta Lytvynenko</Author>
+      <Description>Generate boilerplate code for running a user defined function</Description>
+      <Shortcut>runudfs</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Terrasoft.Core.DB</Namespace>
+        </Import>
+      </Imports>
+      <Code Language="CSharp">
+        <![CDATA[var udf = new UserDefinedFunction($userConnection$, "$userDefinedFunctionName$");
+udf.WithParameter("ParameterName", "ParameterValue");
+var result = udf.ExecuteScalar<$returnType$>();]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>userConnection</ID>
+          <ToolTip>Specify userConnection variable</ToolTip>
+          <Default>UserConnection</Default>
+        </Literal>
+        <Literal>
+          <ID>userDefinedFunctionName</ID>
+          <ToolTip>Specify user defined function name</ToolTip>
+          <Default>USER_DEFINED_FUNCTION_NAME</Default>
+        </Literal>
+        <Literal>
+          <ID>returnType</ID>
+          <ToolTip>Specify type for returned value</ToolTip>
+          <Default>string</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

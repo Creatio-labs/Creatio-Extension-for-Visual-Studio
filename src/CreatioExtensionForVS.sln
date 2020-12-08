@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationServiceTemplat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityEventListenerTemplate", "ItemTemplates\EntityEventListenerTemplate\EntityEventListenerTemplate.csproj", "{2685956B-C846-45B1-8010-E40BC239D844}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutorTemplate", "ExecutorTemplate\ExecutorTemplate.csproj", "{50697635-E4C7-4FD3-AD87-4A08C649533F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{2685956B-C846-45B1-8010-E40BC239D844}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2685956B-C846-45B1-8010-E40BC239D844}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2685956B-C846-45B1-8010-E40BC239D844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50697635-E4C7-4FD3-AD87-4A08C649533F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50697635-E4C7-4FD3-AD87-4A08C649533F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50697635-E4C7-4FD3-AD87-4A08C649533F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50697635-E4C7-4FD3-AD87-4A08C649533F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ADEEE011-7B77-48A8-A945-D274324E2A8D} = {E4B0B983-8DFF-4D49-9304-B0F02064D0DC}
 		{2685956B-C846-45B1-8010-E40BC239D844} = {E4B0B983-8DFF-4D49-9304-B0F02064D0DC}
+		{50697635-E4C7-4FD3-AD87-4A08C649533F} = {E4B0B983-8DFF-4D49-9304-B0F02064D0DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9658C33C-5FC0-4CBE-A36A-2CE836281C33}

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Get instance from IOC container</Title>
+      <Author>Mykyta Lytvynenko</Author>
+      <Description>Generate boilerplate code for getting instance from IOC container</Description>
+      <Shortcut>cfg</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Terrasoft.Core.Factories</Namespace>
+        </Import>
+      </Imports>
+      <Code Language="CSharp">
+        <![CDATA[var ctorArgument = new ConstructorArgument("$argumentName$", $argumentValue$);
+var instance = ClassFactory.Get<$itemType$>(ctorArgument);]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>argumentName</ID>
+          <ToolTip>Specify argument name</ToolTip>
+          <Default>UserConnection</Default>
+        </Literal>
+        <Literal>
+          <ID>argumentValue</ID>
+          <ToolTip>Specify argument value</ToolTip>
+          <Default>userConnection</Default>
+        </Literal>
+        <Literal>
+          <ID>itemType</ID>
+          <ToolTip>Specify type of requested instance</ToolTip>
+          <Default>IRequestedType</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
