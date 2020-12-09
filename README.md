@@ -11,7 +11,10 @@ ssg | Creates a code for getting system setting value
 cfg | Creates a code for getting instance from IOC container
 checkop | Creates a code for checking that user can execute operation (throw an exception)
 trycheckop | Creates a code for checking that user can execute operation (returns true or false)
-esq | Creates a code for entity schema query
+esqc | Creates a code for entity schema query (GetEntityCollection)
+esqe | Creates a code for entity schema query (GetEntity)
+crte | Creates a code for entity creation
+ffdb | Creates a code for fetching entity from DB
 ### Item templates
 * Configuration service
 * Entity event listener
