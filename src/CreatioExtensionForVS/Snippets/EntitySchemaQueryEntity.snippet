@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Entity schema query (GetEntity)</Title>
+      <Author>Mykyta Lytvynenko</Author>
+      <Description>Generate boilerplate code for entity schema query</Description>
+      <Shortcut>esqe</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Terrasoft.Core</Namespace>
+        </Import>
+        <Import>
+          <Namespace>Terrasoft.Core.DB</Namespace>
+        </Import>
+        <Import>
+          <Namespace>Terrasoft.Core.Entities</Namespace>
+        </Import>
+      </Imports>
+      <Code Language="CSharp">
+        <![CDATA[var esq = new EntitySchemaQuery($userConnection$.EntitySchemaManager, "$entitySchemaName$") {
+    UseAdminRights = false,
+    IgnoreDisplayValues = true,
+    JoinRightState = QueryJoinRightLevel.Disabled,
+};
+
+esq.PrimaryQueryColumn.IsAlwaysSelect = true;
+var colName = esq.AddColumn("ColumnName").Name;
+
+esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "ColumnName", "columnValue"));
+
+var entity = esq.GetEntity(userConnection, $recordId$);]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>userConnection</ID>
+          <ToolTip>Specify user connection</ToolTip>
+          <Default>UserConnection</Default>
+        </Literal>
+        <Literal>
+          <ID>entitySchemaName</ID>
+          <ToolTip>Specify entity schema name</ToolTip>
+          <Default>EntitySchemaName</Default>
+        </Literal>
+        <Literal>
+          <ID>recordId</ID>
+          <ToolTip>Specify record id</ToolTip>
+          <Default>recordId</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Create entity</Title>
+      <Author>Mykyta Lytvynenko</Author>
+      <Description>Generate boilerplate code for creating entity</Description>
+      <Shortcut>crte</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[var schema = $userConnection$.EntitySchemaManager.GetInstanceByName("$entitySchemaName$");
+var entity = schema.CreateEntity($userConnection$);]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>userConnection</ID>
+          <ToolTip>Specify user connection</ToolTip>
+          <Default>UserConnection</Default>
+        </Literal>
+        <Literal>
+          <ID>entitySchemaName</ID>
+          <ToolTip>Specify entity schema name</ToolTip>
+          <Default>EntitySchemaName</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
