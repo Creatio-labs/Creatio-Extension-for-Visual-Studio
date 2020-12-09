@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Check can execute operation</Title>
+      <Author>Mykyta Lytvynenko</Author>
+      <Description>Generate boilerplate code for checking that user can execute operation</Description>
+      <Shortcut>checkop</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Terrasoft.Core</Namespace>
+        </Import>
+      </Imports>
+      <Code Language="CSharp">
+        <![CDATA[$userConnection$.DBSecurityEngine.CheckCanExecuteOperation("$operationCode$");]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>userConnection</ID>
+          <ToolTip>Specify userConnection variable</ToolTip>
+          <Default>UserConnection</Default>
+        </Literal>
+        <Literal>
+          <ID>operationCode</ID>
+          <ToolTip>Specify operation code</ToolTip>
+          <Default>OperationCode</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
