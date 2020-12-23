@@ -16,9 +16,21 @@ namespace $rootnamespace$
         #region Methods: Public
 
         [OperationContract]
+        [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped,
+            ResponseFormat = WebMessageFormat.Json)]
+        public $safeitemrootname$Response GlbGetMethod1($safeitemrootname$Request request)
+        {
+            var response = new $safeitemrootname$Response();
+
+            //TODO your business logic
+
+            return response;
+        }
+
+        [OperationContract]
         [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped,
-                    ResponseFormat = WebMessageFormat.Json)]
-        public $safeitemrootname$Response GlbMethod1($safeitemrootname$Request request)
+            ResponseFormat = WebMessageFormat.Json)]
+        public $safeitemrootname$Response GlbPostMethod1($safeitemrootname$Request request)
         {
             var response = new $safeitemrootname$Response();
 
