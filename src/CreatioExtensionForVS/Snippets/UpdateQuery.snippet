@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Update records in DB</Title>
+      <Author>Mykyta Lytvynenko</Author>
+      <Description>Generate boilerplate code for updating records in DB</Description>
+      <Shortcut>updq</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Terrasoft.Core.DB</Namespace>
+        </Import>
+      </Imports>
+      <Code Language="CSharp">
+        <![CDATA[var update = new Update($userConnection$, "$entitySchemaName$")
+    .Set("$columnName$", Column.Parameter($columnValue$))
+.Where("$filterColumnName$").IsEqual(Column.Parameter($filterColumnValue$)) as Update;
+update.Execute();$end$]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>userConnection</ID>
+          <ToolTip>Specify user connection</ToolTip>
+          <Default>UserConnection</Default>
+        </Literal>
+        <Literal>
+          <ID>entitySchemaName</ID>
+          <ToolTip>Specify entity schema name</ToolTip>
+          <Default>EntitySchemaName</Default>
+        </Literal>
+        <Literal>
+          <ID>columnName</ID>
+          <ToolTip>Specify column name</ToolTip>
+          <Default>ColumnName</Default>
+        </Literal>
+        <Literal>
+          <ID>columnValue</ID>
+          <ToolTip>Specify column value</ToolTip>
+          <Default>ColumnValue</Default>
+        </Literal>
+        <Literal>
+          <ID>filterColumnName</ID>
+          <ToolTip>Specify filter column name</ToolTip>
+          <Default>FilterColumnName</Default>
+        </Literal>
+        <Literal>
+          <ID>filterColumnValue</ID>
+          <ToolTip>Specify filter column value</ToolTip>
+          <Default>FilterColumnValue</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

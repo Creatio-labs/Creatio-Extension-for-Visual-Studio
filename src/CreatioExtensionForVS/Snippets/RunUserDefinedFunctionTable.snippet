@@ -21,7 +21,7 @@ udf.ReturnType = UserDefinedFunctionReturnType.Table;
 using (var dbExecutor = userConnection.EnsureDBConnection()){
     using (var reader = udf.ExecuteReader(dbExecutor)) {
         while (reader.Read()) {
-
+            $end$
         }
     }
 }]]>

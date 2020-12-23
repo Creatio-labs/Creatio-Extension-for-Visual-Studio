@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="CreatioExtensionForVS.11c4dde8-b4c6-4e7d-ad59-80f3fb1166f3" Version="0.1.9" Language="en-US" Publisher="Mykyta Lytvynenko" />
+        <Identity Id="CreatioExtensionForVS.11c4dde8-b4c6-4e7d-ad59-80f3fb1166f3" Version="0.1.15" Language="en-US" Publisher="Mykyta Lytvynenko" />
         <DisplayName>Creatio Extension for Visual Studio</DisplayName>
         <Description xml:space="preserve">The set of extensions, templates, and snippets that will increase your productivity with Creatio development.</Description>
+        <MoreInfo>https://github.com/nktlitvinenko/Creatio-Extension-for-Visual-Studio</MoreInfo>
+        <License>Resources\LICENSE.txt</License>
+        <GettingStartedGuide>https://github.com/nktlitvinenko/Creatio-Extension-for-Visual-Studio</GettingStartedGuide>
         <Icon>Resources\creatio-circle.png</Icon>
         <PreviewImage>Resources\creatio-circle.png</PreviewImage>
+        <Tags>creatio</Tags>
         <Preview>true</Preview>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+        <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Pro" />
+        <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Enterprise" />
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />

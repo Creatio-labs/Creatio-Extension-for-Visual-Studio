@@ -2,19 +2,21 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>Fetch from DB</Title>
+      <Title>Insert record to DB</Title>
       <Author>Mykyta Lytvynenko</Author>
-      <Description>Generate boilerplate code for fetching entity from DB</Description>
-      <Shortcut>ffdb</Shortcut>
+      <Description>Generate boilerplate code for inserting record to DB</Description>
+      <Shortcut>insq</Shortcut>
     </Header>
     <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Terrasoft.Core.DB</Namespace>
+        </Import>
+      </Imports>
       <Code Language="CSharp">
-        <![CDATA[var schema = $userConnection$.EntitySchemaManager.GetInstanceByName("$entitySchemaName$");
-var entity = schema.CreateEntity($userConnection$);
-
-if (entity.FetchFromDB($recordId$)) {
-    $end$
-}]]>
+        <![CDATA[var insert = new Insert($userConnection$).Into("$entitySchemaName$")
+    .Set("$columnName$", Column.Parameter($columnValue$)) as Insert;
+insert.Execute();$end$]]>
       </Code>
       <Declarations>
         <Literal>
@@ -28,9 +30,14 @@ if (entity.FetchFromDB($recordId$)) {
           <Default>EntitySchemaName</Default>
         </Literal>
         <Literal>
-          <ID>recordId</ID>
-          <ToolTip>Specify record id</ToolTip>
-          <Default>recordId</Default>
+          <ID>columnName</ID>
+          <ToolTip>Specify column name</ToolTip>
+          <Default>ColumnName</Default>
+        </Literal>
+        <Literal>
+          <ID>columnValue</ID>
+          <ToolTip>Specify column value</ToolTip>
+          <Default>ColumnValue</Default>
         </Literal>
       </Declarations>
     </Snippet>
