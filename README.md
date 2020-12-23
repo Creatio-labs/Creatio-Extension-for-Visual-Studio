@@ -3,6 +3,15 @@ The set of extensions, templates, and snippets that will increase your productiv
 ### Snippets
 Shortcut | Description
 ------------ | -------------
+esqc | Creates a code for entity schema query (GetEntityCollection)
+esqe | Creates a code for entity schema query (GetEntity)
+crte | Creates a code for entity creation
+ffdb | Creates a code for fetching entity from DB
+insq | Creates a code for inserting record to DB
+updq | Creates a code for updating records in DB
+delq | Creates a code for deleting records from DB
+selqs | Creates a code for selecting scalar value from DB
+selqt | Creates a code for selecting records from DB
 runpb | Creates a code for running a business process
 runsp | Creates a code for running a stored procedure
 runudfs | Creates a code for running a user defined function with scalar return value
@@ -11,10 +20,6 @@ ssg | Creates a code for getting system setting value
 cfg | Creates a code for getting instance from IOC container
 checkop | Creates a code for checking that user can execute operation (throw an exception)
 trycheckop | Creates a code for checking that user can execute operation (returns true or false)
-esqc | Creates a code for entity schema query (GetEntityCollection)
-esqe | Creates a code for entity schema query (GetEntity)
-crte | Creates a code for entity creation
-ffdb | Creates a code for fetching entity from DB
 ### Item templates
 * Configuration service
 * Entity event listener
