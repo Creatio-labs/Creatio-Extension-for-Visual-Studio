@@ -1,5 +1,7 @@
 # Creatio Extension for Visual Studio
 The set of extensions, templates, and snippets that will increase your productivity with Creatio development.
+
+## Getting Started
 ### Snippets
 Shortcut | Description
 ------------ | -------------
@@ -24,3 +26,12 @@ trycheckop | Creates a code for checking that user can execute operation (return
 * Configuration service
 * Entity event listener
 * Executor
+
+## Versioning
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/nktlitvinenko/Creatio-Extension-for-Visual-Studio/tags). 
+
+## Authors
+* **Mykyta Lytvynenko**
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
