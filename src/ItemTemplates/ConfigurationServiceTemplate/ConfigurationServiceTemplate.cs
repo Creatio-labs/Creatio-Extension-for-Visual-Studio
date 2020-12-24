@@ -18,7 +18,7 @@ namespace $rootnamespace$
         [OperationContract]
         [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped,
             ResponseFormat = WebMessageFormat.Json)]
-        public $safeitemrootname$Response GlbGetMethod1($safeitemrootname$Request request)
+        public $safeitemrootname$Response GlbGetMethod1()
         {
             var response = new $safeitemrootname$Response();
 
