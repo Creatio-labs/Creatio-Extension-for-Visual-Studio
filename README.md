@@ -2,6 +2,8 @@
 The set of extensions, templates, and snippets that will increase your productivity developing on Creatio platform.
 
 ## Getting Started
+### Installation
+You can install an extension from the official Visual Studio Marketplace by [link](https://marketplace.visualstudio.com/items?itemName=mykyta-lytvynenko.CreatioExtensionForVS)
 ### Snippets
 Shortcut | Description
 ------------ | -------------
