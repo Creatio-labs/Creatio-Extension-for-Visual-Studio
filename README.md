@@ -1,5 +1,5 @@
 # Creatio Extension for Visual Studio
-The set of extensions, templates, and snippets that will increase your productivity with Creatio development.
+The set of extensions, templates, and snippets that will increase your productivity developing on Creatio platform.
 
 ## Getting Started
 ### Snippets
