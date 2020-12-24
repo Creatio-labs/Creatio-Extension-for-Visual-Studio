@@ -1,7 +1,9 @@
 # Creatio Extension for Visual Studio
-The set of extensions, templates, and snippets that will increase your productivity with Creatio development.
+The set of extensions, templates, and snippets that will increase your productivity developing on Creatio platform.
 
 ## Getting Started
+### Installation
+You can install an extension from the official Visual Studio Marketplace by [link](https://marketplace.visualstudio.com/items?itemName=mykyta-lytvynenko.CreatioExtensionForVS)
 ### Snippets
 Shortcut | Description
 ------------ | -------------
@@ -26,6 +28,9 @@ trycheckop | Creates a code for checking that user can execute operation (return
 * Configuration service
 * Entity event listener
 * Executor
+
+## Contributing
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/nktlitvinenko/Creatio-Extension-for-Visual-Studio/tags). 
