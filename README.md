@@ -33,7 +33,7 @@ trycheckop | Creates a code for checking that user can execute operation (return
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/nktlitvinenko/Creatio-Extension-for-Visual-Studio/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Creatio-labs/Creatio-Extension-for-Visual-Studio/tags). 
 
 ## Authors
 * **Mykyta Lytvynenko**
