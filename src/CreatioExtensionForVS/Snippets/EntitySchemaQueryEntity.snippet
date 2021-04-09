@@ -27,9 +27,7 @@
 };
 
 esq.PrimaryQueryColumn.IsAlwaysSelect = true;
-var colName = esq.AddColumn("ColumnName").Name;
-
-esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "ColumnName", "columnValue"));
+esq.AddAllSchemaColumns();
 
 var entity = esq.GetEntity(userConnection, $recordId$);$end$]]>
       </Code>
